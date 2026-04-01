@@ -14,10 +14,6 @@
 - Researcher: 0xRIXET
 - Email: 0xrixet@gmail.com
 
-## Notes
-Private repository for CVE coordination.
-
-
 ## Vulnerable Code
 
 File: `src/controllers/AppController.php`
@@ -51,5 +47,4 @@ mysql> SELECT COUNT(*) FROM sessions;
 ```sql
 mysql> SELECT COUNT(*) FROM sessions;
 ERROR 1146 (42S02): Table 'sessions' doesn't exist
-```
-```
+
