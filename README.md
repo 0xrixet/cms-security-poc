@@ -57,13 +57,6 @@ mysql> SELECT COUNT(*) FROM sessions;
 ERROR 1146 (42S02): Table 'sessions' doesn't exist
 ```
 
-## Timeline
-- **Feb 2026:** Vulnerability discovered
-- **Feb 2026:** Vendor notified via GitHub Security Advisory
-- **Feb 2026:** Vendor disputed as "expected behavior"
-- **Feb 2026:** Submitted to MITRE
-- **April 7, 2026:** CVE-2026-31266 assigned by MITRE
-
 ## References
 - [Craft CMS Repository](https://github.com/craftcms/cms)
 - [Craft Security Documentation](https://craftcms.com/knowledge-base/securing-craft)
