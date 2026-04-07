@@ -9,7 +9,7 @@
 | **Affected Versions** | <= 5.9.5 |
 | **CWE** | CWE-862 (Missing Authorization) |
 | **CVSS** | 6.5 (Medium) |
-| **Discoverer** | 0xRIXET |
+| **SECURITY RESEARCHER** | 0xRIXET |
 
 ## Evidence Contents
 - `screenshots/` - Proof of Concept demonstrations
