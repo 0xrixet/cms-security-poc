@@ -13,7 +13,7 @@
 
 ## Evidence Contents
 - `screenshots/` - Proof of Concept demonstrations
-- `vendor_refusal/` - Vendor refusal evidence
+
 
 ## Vulnerability
 - **Type:** Missing Authorization
