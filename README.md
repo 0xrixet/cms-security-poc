@@ -19,7 +19,7 @@
 - **Type:** Missing Authorization
 - **Impact:** Authentication Bypass
 - **Vendor:** Craft CMS
-- **Status:** ✅ CVE Assigned (CVE-2026-31266)
+- **Status:** CVE-2026-31266
 
 ## Vulnerable Code
 
