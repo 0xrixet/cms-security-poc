@@ -64,5 +64,5 @@ ERROR 1146 (42S02): Table 'sessions' doesn't exist
 
 ## Contact
 - **Security Researcher:** 0xRIXET
-- **Twitter | X:** @0xRIXET
+- **Twitter | X :** @0xRIXET
 - **Email:** 0xrixet@gmail.com
