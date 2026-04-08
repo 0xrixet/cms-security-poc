@@ -63,6 +63,6 @@ ERROR 1146 (42S02): Table 'sessions' doesn't exist
 - [NVD Entry](https://nvd.nist.gov/vuln/detail/CVE-2026-31266) *(pending)*
 
 ## Contact
-- **X:** @0xRIXET
+- **Twitter | X:** @0xRIXET
 - **Security Researcher:** 0xRIXET
 - **Email:** 0xrixet@gmail.com
