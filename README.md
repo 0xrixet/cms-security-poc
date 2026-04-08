@@ -45,6 +45,8 @@ curl -X POST "http://localhost/actions/app/migrate"
 - Pending migrations execute without authentication
 
 
+
+
 ```bash
 # With allowAdminChanges=false
 curl -X POST "http://target/actions/app/migrate"
