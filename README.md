@@ -8,7 +8,7 @@
 | **Product** | Craft CMS |
 | **Affected Versions** | <= 5.9.5 |
 | **CWE** | CWE-862 (Missing Authorization) |
-| **CVSS** | 6.5 (Medium) |
+| **CVSS** | 7.3 (High) |
 | **Security Researcher** | 0xRIXET |
 
 ## Evidence Contents
@@ -60,9 +60,9 @@ ERROR 1146 (42S02): Table 'sessions' doesn't exist
 ## References
 - [Craft CMS Repository](https://github.com/craftcms/cms)
 - [Craft Security Documentation](https://craftcms.com/knowledge-base/securing-craft)
-- [NVD Entry](https://nvd.nist.gov/vuln/detail/CVE-2026-31266) *(pending)*
+- [NVD Entry](https://nvd.nist.gov/vuln/detail/CVE-2026-31266)
 
 ## Contact
-- **Security Researcher:** 0xRIXET
+- **Security Researcher:** 0xRIXET | Mohammed Al-shehri
 - **Twitter | X :** @0xRIXET
 - **Email:** 0xrixet@gmail.com
